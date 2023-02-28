@@ -1,0 +1,379 @@
+.orderpadwrap{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: solid black 2px;
+    width: 95%;
+    min-height: 95vh;
+    max-width: 28rem;
+    margin: 0.3rem;
+    background-color: lightgray;
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: none;
+    padding-bottom: 1rem;
+}
+.orderpad-items-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-height: 38vh;
+    padding-left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+ol{
+    width: 30%;
+}
+li:focus{
+    background-color: red;
+}
+.orderpad-ols-wrap{
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    max-height: 38vh;
+}
+ol{
+    width: 1rem;
+}
+
+.priceli{
+    display: flex;
+    border-bottom: solid 1px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    width: 99%;
+    font-size: .925em;
+
+}
+.itemnamewrap{
+    display: flex;
+    margin: 0;
+    font-size: 1.25em;
+    align-items: center;
+    padding-left: 0.25rem;
+}
+li::marker{
+    color: transparent;
+}
+li{
+    display: flex;
+    margin: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    align-self: flex-start;
+}
+.customizationslist{
+    display: flex;
+    font-size: 1em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-weight: 400;
+    padding-left: 0;
+
+}
+.itemwrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+.qtyinput{
+    width: 60%;
+    max-width: 3rem;
+    text-align: center;
+}
+.lipricewrap{
+        padding-right: 1rem;
+    text-align: right;
+    margin: 0;
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+}
+.highlightselectedproduct{
+    height: 100%;
+    width: 92.5%;
+    align-self: center;
+    background: linear-gradient(90deg, black 50%, transparent 50%), 
+                linear-gradient(90deg, black 50%, transparent 50%), 
+                linear-gradient(0deg, black 50%, transparent 50%), 
+                linear-gradient(0deg, black 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    border-radius: 5px;
+    padding: 10px;
+    animation: dash 25s linear infinite;
+    font-size: .925em;
+    background-color: #EBEBEB;
+}
+.subtotalmainwrap{
+    width: 5rem;
+}
+.subtotalWrap{
+    display: flex;
+    align-self: flex-end;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.1rem;
+}
+h5{
+    display: flex;
+}
+.inputfield{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem 1rem 1rem 0;
+    font-size: 1em;
+}
+.tipwrap{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4rem;
+    position: absolute;
+    left: 1%;
+}
+.tipinput{
+    width: 5rem;
+    border-radius: 0;
+    margin: 0;
+    font-size: 2em;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border: transparent;
+    padding-right: .5rem;
+}
+.tipinput:focus{
+    outline: none;
+}
+.dollarsvg{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+    background: white;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    height: 3.1rem;
+}
+.checkmarksvg{
+    fill: forestgreen;
+    height: 2.35rem;
+}
+@keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+/* .checkmarksvg:active{
+    fill: black;
+    stroke: black;
+    stroke-dasharray: 65;
+    animation: dash 25s linear;
+} */
+.tipbtn{
+    display: flex;
+    order: 4;
+    padding-right: 6%;
+    background: lightgray;
+    border: none;
+}
+.clearbtn{
+    width: 40%;
+    height: 4.5vh;
+    align-self: center;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.35rem;
+    font-weight: 600;
+    border: transparent;
+    background: #96031A;
+    color: white;
+}
+.btnswrap{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    padding-bottom: .25rem;
+    margin-top: .5rem;
+}
+.deletebtn{
+    width:100%;
+    height: 7vh;
+    max-width: 9rem;
+    align-self: flex-start;
+    font-size: .9em;
+    border-radius: .5rem;
+    border: transparent;
+    background-color: #96031A;
+    font-weight: bold;
+    color: white;
+    margin: 0.5rem;
+    font-weight: 500;
+    }
+    .customizebtn,.addtipbtn{
+        width:100%;
+        max-width: 9rem;
+        height: 7vh;
+        align-self: flex-start;
+        font-size: .9em;
+        border-radius: .5rem;
+        border: transparent;
+        background-color: #2C497F;
+        font-weight: bold;
+        color: white;
+        margin: 0.5rem;
+        font-weight: 500;
+
+    }
+.submitbtn{
+    width: 100%;
+    height: 7vh;
+    margin: 0.5rem;
+    align-self: flex-start;
+    font-size: 1em;
+    border-radius: .5rem;
+    border: transparent;
+    background-color: #499F68;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: white;
+}
+.cuztomizationlabel{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height:10vh;    font-size: .7em;
+}
+.customrequestwrap{
+    text-align: left;
+    padding: 0.5rem;
+    text-indent: 0;
+    font-size: .9em;
+}
+.hide{
+    display: none;
+}
+.addinswrap{
+    padding-left: 0.5rem;
+    font-size: .8em;
+    text-align: left;
+}
+.customizationinput{
+    font-size: 1em;
+    width: 95%;
+    align-self: center;
+    margin: 0;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.ordernum{
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: .5rem;
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
+@media(min-width: 1024px){
+    .clearbtn:active{
+        opacity: .8;
+    }
+    .tipbtn:hover{
+        cursor: pointer;;
+    }
+    .checkmarksvg:hover{
+        stroke: #65B884;
+    }
+     .submitbtn:hover {
+        background-color: lightgreen;
+        cursor: pointer;
+        opacity: .9;
+        font-weight: bold;
+        color: black;
+        font-size: 1.025em;
+    }
+    .deletebtn:hover, .customizebtn:hover,.addtipbtn:hover, .clearbtn:hover{
+        cursor: pointer;
+        font-weight: 600;
+        opacity: .8;
+        font-size: .925;
+    }
+    .deletebtn:hover{
+        background-color: #F00528;
+        color: black;
+        opacity: .9;
+
+    }
+    .priceli:hover, .highlightselectedproduct:hover{
+        cursor: pointer;
+        opacity: .9;
+    }
+    .orderpadwrap{
+        margin-right: 2rem;
+    }
+}
+@media(max-width:474px) {
+    .orderpadwrap{
+        height: 100%;
+    }
+    .checkmarksvg{
+        justify-content: center
+    }
+    .tipinput{
+        width: 4rem;
+    }
+    .subtotalWrap{
+        margin: 1rem 0;
+    }
+    .tipwrap{
+        justify-content: center;
+    }
+    
+}
+@media(min-width:420px) {
+    .tipwrap{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        position: relative;
+        left: 1%;
+        margin-right: 1rem;
+    }
+    
+}

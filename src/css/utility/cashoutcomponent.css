@@ -1,0 +1,47 @@
+.cashoutscreenbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+.employeedatasectionwrap{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 1rem .25rem;
+    max-width: 25rem;
+    padding: 0 1rem;
+}
+.employeedata{
+    border-bottom: solid 2px;
+    margin: .25rem;
+    padding-left: .5rem;
+    width: 100%;
+    font-weight: 500;
+}
+.cashoutbtnswrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cashoutbtn{
+    width: 80%;
+    max-width: 20rem;
+    align-self: center;
+    font-size: .92em;
+    height: 10vh;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    border: transparent;
+    color: white;
+    background-color: #283F53;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+@media (min-width: 1024px){
+    .cashoutbtn:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+}
