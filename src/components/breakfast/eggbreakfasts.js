@@ -19,7 +19,8 @@ function EggBreakfasts() {
       const pull = await fetch ('https://pos-server-bfyv.onrender.com/customizedplates', {
         method: "POST",
         headers: { "Content-Type": "application/json",
-        'Access-Control-Allow-Origin':'*', },
+        'Access-Control-Allow-Origin':'*',
+        mode: 'no-cors',  },
         body: JSON.stringify(queryArr),
       });
     //   const data = await pull.json()
