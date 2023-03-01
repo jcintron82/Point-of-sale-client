@@ -16,10 +16,10 @@ function EggBreakfasts() {
     queryArr.push(input);
     try {
       // Send data to the backend via POST
-      const pull = await fetch ('https://pos-server-bfyv.onrender.com/customizedplates', {
+      const pull = await fetch ('http://localhost:8000/customizedplates', {
         method: "POST",
         headers: { "Content-Type": "application/json",
-        },
+      },
         body: JSON.stringify(queryArr),
       });
     //   const data = await pull.json()
@@ -31,7 +31,7 @@ function EggBreakfasts() {
   };
   const orderFetch = async () => {
     try {
-      const call = await fetch("https://pos-server-bfyv.onrender.com/customizedplates");
+      const call = await fetch("http://localhost:8000/customizedplates");
       const data = await call.json();
       console.log(data)
       orderPadArr.push(data);
