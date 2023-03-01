@@ -30,7 +30,7 @@ function EggBreakfasts() {
   };
   const orderFetch = async () => {
     try {
-      const call = await fetch("http://localhost:8000/customizedplates");
+      const call = await fetch("https://pos-server-bfyv.onrender.com/customizedplates");
       const data = await call.json();
       orderPadArr.push(data);
       orderFunc.newOrder();
