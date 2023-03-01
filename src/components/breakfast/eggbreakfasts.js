@@ -18,7 +18,8 @@ function EggBreakfasts() {
       // Send data to the backend via POST
       const pull = await fetch ('https://pos-server-bfyv.onrender.com/customizedplates', {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",
+        'Access-Control-Allow-Origin':'*', },
         body: JSON.stringify(queryArr),
       });
     //   const data = await pull.json()
