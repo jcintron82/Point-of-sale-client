@@ -22,7 +22,7 @@
     padding: 1rem 0;
 }
 .compinput{
-    width: 30%;
+    width: 20%;
     height: 3rem;
     margin: 0.25rem 0;
     text-align: center;
@@ -37,7 +37,6 @@
     justify-content: center;
 }
 .percentwrap{
-    width: 2rem;
     height: 3rem;
     display: flex;
     align-self: center;
@@ -46,6 +45,8 @@
     border-left: none;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    font-size: 2em;
+    font-weight: 500;
 }
 .percentsvg{
     fill: black;

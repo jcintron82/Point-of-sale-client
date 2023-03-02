@@ -180,6 +180,8 @@ h5{
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
     height: 3.1rem;
+    font-size: 2em;
+    font-weight: 500;
 }
 .checkmarksvg{
     fill: forestgreen;
