@@ -28,7 +28,6 @@ input{
     font-size: 1em;
     font-weight: 600;
     margin-top: 1rem;
-    max-width: 15rem;
 }
 .loginwraplabels{
     display: flex;
