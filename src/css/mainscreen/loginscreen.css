@@ -12,12 +12,12 @@
 input{
     width: 11.5rem;
     height: 3rem;
-    border-radius: .5rem;
-    margin: 1rem 1rem 1rem 0;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
     font-size: 2em;
 }
 .loginbtn{
-    width:70vw;
+    width:70%;
     max-width: 11.5rem;
     align-self: center;
     height: 6vh;
@@ -32,9 +32,9 @@ input{
 .loginwraplabels{
     display: flex;
     flex-flow: column nowrap;
-    width:70vw;
-    max-width: 11.5rem;
-
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 svg{
     font: serif;
