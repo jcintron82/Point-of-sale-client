@@ -61,8 +61,8 @@ export function ManagerPanel() {
               key={index}
             >{item[1][0].Item + 'GGG'}gdgsgjhb{item[1][0].Item}</li>})}
         </span>
-        <span className="compwrap">
-        <button className="utilitybtns">Update Submitted Metrics</button></span>
+        {/* <span className="compwrap">
+        <button className="utilitybtns">Update Submitted Metrics</button></span> */}
        </div></div>
       
   );
