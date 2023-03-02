@@ -51,7 +51,7 @@ const employeeMetrics = {
   const login = async () => {
     try {
         // Send data to the backend via POST
-        const push = await fetch("http://localhost:8000/login", {
+        const push = await fetch("https://pos-server-bfyv.onrender.com/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(credentials),
