@@ -143,7 +143,14 @@ function OrderPad() {
   //How we're transporting cuztomization data from other components without prop drilling.
   //A calling of this function can be found in any item cuztomization component
   customizationOptions.updateState = (classification, input) => {
-    finalOrderArr[deleteIndex][classification] = input;
+    if ( classification === 'AddIns'){
+      console.log('Ins')
+      finalOrderArr[deleteIndex][classification] = finalOrderArr[deleteIndex][classification] + input;
+    }
+    else { 
+      finalOrderArr[deleteIndex][classification] = input;
+      console.log('else')
+    }
     setStately(!stately);
   };
 
