@@ -66,10 +66,10 @@ const employeeMetrics = {
   return (
     <div className='loginbody'>
         <h1 className="incorrectpasswordwrapper">{incorrectPasswordMessage}</h1>
-        <label>Employee ID 
+        <label className="loginwraplabels">Employee ID (Demo Employee ID: 12345)
             <input required type='number' onChange={(e) => setUsernmae(e.target.value)}></input>
         </label>
-        <label>Password
+        <label className="loginwraplabels">Password<br></br> (Demo Password: employee) Case-sensitive
             <input required type='password' onChange={(e) => setPassword(e.target.value)}></input>
         </label>
         <button className="loginbtn" onClick={(e) => {login(); receiveSuccessfulLogin()}}>Log-In</button>

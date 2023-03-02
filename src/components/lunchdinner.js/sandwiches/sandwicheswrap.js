@@ -14,7 +14,7 @@ function SandwichesWrap() {
   const queryProduct = async (input) => {
     queryArr.push(input);
     try {
-      const pull = await fetch("http://localhost:8000/customizedplates", {
+      const pull = await fetch("https://pos-server-bfyv.onrender.com/customizedplates", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(queryArr),

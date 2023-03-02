@@ -16,11 +16,9 @@ input{
     margin: 1rem 1rem 1rem 0;
     font-size: 2em;
 }
-label{
-    width: 11.5rem;
-}
 .loginbtn{
-    width: 90%;
+    width:70vw;
+    max-width: 11.5rem;
     align-self: center;
     height: 6vh;
     border-radius: 0.4rem;
@@ -31,6 +29,16 @@ label{
     font-weight: 600;
     margin-top: 1rem;
     max-width: 15rem;
+}
+.loginwraplabels{
+    display: flex;
+    flex-flow: column nowrap;
+    width:70vw;
+    max-width: 11.5rem;
+
+}
+svg{
+    font: serif;
 }
 @media (min-width:1024px){
     .loginbtn:hover{
