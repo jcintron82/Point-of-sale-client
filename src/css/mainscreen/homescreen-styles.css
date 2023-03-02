@@ -119,6 +119,8 @@ h6{
     }
     .tipinput{
         width: 4rem;
+        height: 100%;
+        padding: 0;
     }
     
 }
