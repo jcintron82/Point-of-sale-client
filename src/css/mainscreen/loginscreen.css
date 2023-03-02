@@ -34,7 +34,7 @@ input{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 10rem;
 }
 svg{
     font: serif;
