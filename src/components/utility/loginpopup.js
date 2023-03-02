@@ -15,7 +15,7 @@ const switchPopUp = (state) => { popupFunc.managerPopup() }
 
   const receiveSuccessfulLogin = async (e) => {
     e.preventDefault();
-    const call = await fetch("http://localhost:8000/popup");
+    const call = await fetch("https://pos-server-bfyv.onrender.com/popup");
     const data = await call.json();
     onClick(data.code);
   };
@@ -28,7 +28,7 @@ const switchPopUp = (state) => { popupFunc.managerPopup() }
     e.preventDefault();
     try {
       // Send data to the backend via POST
-      const push = await fetch("http://localhost:8000/popup", {
+      const push = await fetch("https://pos-server-bfyv.onrender.com/popup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(credentials),

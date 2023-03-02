@@ -32,7 +32,7 @@ export function CashOutScreen() {
       console.log(parseFloat(lifetimeSales).toFixed(2))
       serverMetrics.push(parseFloat(lifetimeSales), employeeID, dailySales)
     // Send data to the backend via POST
-    const pull = await fetch("http://localhost:8000/updatemetrics", {
+    const pull = await fetch("https://pos-server-bfyv.onrender.com/updatemetrics", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(serverMetrics)
