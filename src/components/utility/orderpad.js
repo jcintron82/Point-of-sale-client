@@ -124,8 +124,16 @@ function OrderPad() {
   };
 
   const recordChange = (input) => {
-    finalOrderArr[deleteIndex].customRequest = input.target.value;
-    setInput(input.target.value);
+    if (finalOrderArr[deleteIndex].customRequest === undefined){
+      finalOrderArr[deleteIndex].customRequest = 'Please select an item to customize';
+      console.log('f')
+      setInput(finalOrderArr[deleteIndex].customRequest);
+    }
+    else{
+      finalOrderArr[deleteIndex].customRequest = input.target.value;
+      console.log('s')
+      setInput(input.target.value);
+    }
   };
 
   const recordTip = (input) => {
@@ -275,6 +283,7 @@ function OrderPad() {
           className="customizationinput"
           value={input}
           onChange={recordChange}
+          placeholder='Please Select An Item To Customize'
         ></input>
         <button className="clearbtn" onClick={clearCustomization}>
           Clear
