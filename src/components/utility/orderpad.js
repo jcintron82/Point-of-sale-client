@@ -102,7 +102,8 @@ function OrderPad() {
       localStorage.setItem("orderNum", priceArr[2]);
       setnum(priceArr[2]);
       const dailyTips = localStorage.getItem('dailyTips')
-      localStorage.setItem('dailyTips',  tips)
+      localStorage.setItem('dailyTips',  tips);
+      console.log(orders);
       clearAllValues();
     } else {
       console.log("Add Items Please");
