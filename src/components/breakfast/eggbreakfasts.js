@@ -13,17 +13,20 @@ function EggBreakfasts() {
   const navigate = useNavigate();
 
   const queryProduct = async (input) => {
+    console.log('HI')
     queryArr.push(input);
     try {
       // Send data to the backend via POST
       const pull = await fetch ('https://pos-server-bfyv.onrender.com/customizedplates', {
         method: "POST",
         headers: { "Content-Type": "application/json",
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
       },
         body: JSON.stringify(queryArr),
       });
-    //   const data = await pull.json()
+      console.log(pull)
+      const data = JSON.stringify(pull)
+      console.log(data)
       orderFetch();
     queryArr.splice(0)
     } catch (err) {

@@ -20,7 +20,7 @@ const employeeMetrics = {
   const navigate = useNavigate();
 
   const receiveSuccessfulLogin = async () => {
-    const call = await fetch("http://localhost:8000/login");
+    const call = await fetch("https://pos-server-bfyv.onrender.com/login");
         const data = await call.json();
         if(!data.employeeName){
             setMessage('Incorrect Username/Password')

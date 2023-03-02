@@ -10,7 +10,7 @@ export function HomeScreenBody() {
 
   const isLoggedIn = async () => {
     try {
-      const call = await fetch("http://localhost:8000/confirmauth");
+      const call = await fetch("https://pos-server-bfyv.onrender.com/confirmauth");
       const data = await call.json();
       if (data.status != 'Authorized'){
         
